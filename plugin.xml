@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e107Plugin name="Games" lan="" version="1.0" date="2019-10-23" compatibility="2.0" installRequired="true" >
+	<author name="admin" url="http://122.160.153.224/wp/game" />
+	<summary lan="">This is game plugin.</summary>
+	<description lan="">This is game plugin.</description>
+	<keywords>
+		<word>gaming</word>
+		<word>game</word>
+		<word>game</word>
+	</keywords>
+	<category>content</category>
+	<copyright>Game 2019</copyright>
+	<adminLinks>
+		<link url="admin_config.php" description="" icon="" iconSmall="" icon128="" primary="true" >LAN_CONFIGURE</link>
+	</adminLinks>
+	
+</e107Plugin>

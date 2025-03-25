@@ -1,0 +1,2 @@
+realtest_.php
+- tinksbunks_.js ei saa infot get_game_list.php'lt - $form.serialize?
