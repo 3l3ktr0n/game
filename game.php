@@ -29,7 +29,7 @@ class game_front
         $userID = USERID;
         $page = (isset($_GET['page']) && is_string($_GET['page']));
        
-		if($row = $sql->retrieve("games", "*", "WHERE game_id = {$gameID}"))
+                if($row = $sql->retrieve("games", "*", "WHERE game_id = {$gameID}"))
         {  
             echo $tp->parseTemplate($template['start'], true, $sc);
 

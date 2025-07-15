@@ -17,7 +17,6 @@ $userID = USERID;
 
 $sql->gen("SELECT game.game_sef, review.review_id, review.review_title, review.review_sef, review.review_user_id FROM #game_user_reviews AS review LEFT JOIN #games AS game ON review_game_id = {$gameID} WHERE game_id = {$gameID} AND review_id = {$reviewID}");
 $row = $sql->fetch();
-print_a($row);
 
 $reviews = array(
     'game_id' => $gameID,
@@ -34,8 +33,7 @@ $review = array(
 );
 $reviewurl = e107::url('games', 'review', $review);
 
-/*print_a($review);
-print_a($reviewurl);*/
+
 
 $review_id = isset($row['review_id']);
 
@@ -121,7 +119,6 @@ function editReview($gameID, $userID, $reviewID)
             }
             $test = array_column($test, 'platform_name');  
             echo $frm->select('review_platform', $platforms, $row['review_platform']);
-            //print_a($platform_array);
         }
 
         echo $frm->text('review_title', $row['review_title'], $row['review_title']);

@@ -158,16 +158,17 @@ class games_ui extends e_admin_ui
 			),
 
             'game_platforms' => array(
-				'title'         => 'Platforms',
-				'type'          => 'method',
-				'data'          => 'str',
-				'width'         => 'auto',
-				//'nolist' => true,
-				'readParms'     => array(),
-				'writeParms'    => array(),
-				'class'         => 'left',
-				'thclass'       => 'left'
-			),
+                                'title'         => 'Platforms',
+                                'type'          => 'method',
+                                'data'          => 'str',
+                                'width'         => 'auto',
+                                //'nolist' => true,
+                                'readParms'     => array(),
+                                'writeParms'    => array(),
+                                'class'         => 'left',
+                                'thclass'       => 'left'
+                        ),
+
 
 			'game_developer' => array(
                 'title'         => 'Developer',
