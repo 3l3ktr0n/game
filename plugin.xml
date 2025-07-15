@@ -10,8 +10,10 @@
 	</keywords>
 	<category>content</category>
 	<copyright>Game 2019</copyright>
-	<adminLinks>
-		<link url="admin_config.php" description="" icon="" iconSmall="" icon128="" primary="true" >LAN_CONFIGURE</link>
-	</adminLinks>
+        <adminLinks>
+                <link url="admin_config.php" description="" icon="" iconSmall="" icon128="" primary="true" >LAN_CONFIGURE</link>
+                <link url="wiki_admin.php" description="" icon="" iconSmall="" icon128="" >Wiki</link>
+<link url="wiki_admin.php?pending=1" description="" icon="" iconSmall="" icon128="" >Pending Edits</link>
+        </adminLinks>
 	
 </e107Plugin>
