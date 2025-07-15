@@ -172,7 +172,6 @@ class games_front
                 $urls = e_REQUEST_SELF.'?page=--FROM--';
             }
         }
-print_a($query);
         if($result > 0)  
         {
             $game = $sql->retrieve($query, true);
@@ -182,10 +181,7 @@ print_a($query);
                 $sc->setVars($games);
                 echo $tp->parseTemplate($template['list'], true, $sc);
             }
-            print_a($count);print_a($urls);print_a($total);print_a($page);print_a($perPage);print_a($options);
-            print_a($frm->pagination($urls, $total, $page, $perPage, $options));
             echo $frm->pagination($urls, $total, $page, $perPage, $options);
-            //print_a($result);print_a($count);print_a($urls);print_a($total);print_a($page);print_a($perPage);print_a($options);
         }  
         else  
         {  

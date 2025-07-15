@@ -182,6 +182,13 @@ class games_url // plugin-folder + '_url'
 			'redirect'		=> '{e_PLUGIN}games/review.php?id=$1&review=$3&action=$5'
 		);
 
+        // Allow logged-in users to submit new games
+        $config['submitgame'] = array(
+                        'alias'         => 'games',
+                        'regex'                 => '^{alias}/submit/?$',
+                        'sef'                   => '{alias}/submit',
+                        'redirect'              => '{e_PLUGIN}games/add_game.php'
+                );
 		return $config;
 	}
 	
